@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/css/global.css">
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="public/css/animations.css">
+    <link rel="stylesheet" type="text/css" href="public/css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet"> 
+    <title>Bin2Dec</title>
+</head>
+<body>
+    <!-- Document's container -->
+    <div class="container">
+
+        <!-- Main section -->
+        <div id="calc">
+
+            <!-- Header's section -->
+            <header>
+                <div class="header-title">
+                    <h1 class="app-name">Bin2Dec</h1>
+                    <a href="https://github.com/eliasbiondo/bin2dec" target="blank_">
+                        <img src="public/images/icons/git.svg" alt="GitHub logo">
+                    </a>
+                </div>
+                <div class="header-description">
+                    <p>Your binary to decimal calculator</p>
+                </div>
+            </header>
+
+            <!-- App section -->
+            <div id="app">
+                <div id="input-fieldset">
+                    <label for="binary">Binary</label>
+                    <input type="number" id="binary" name="binary" min="0" max="1" onkeypress="return isValidNumber(event)">
+                </div>
+                <div id="output-fieldset">
+                    <label for="decimal">Decimal</label>
+                    <div class="input-block">
+                        <input type="text" id="decimal" name="decimal" readonly="readonly">
+                        <span class="clipboard"></span>
+                        <span class="save"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra features -->
+            <div class="extra">
+                <div class="swap">
+                    <div class="icon">
+                        <img src="public/images/icons/swap.svg">
+                    </div>
+                    <span>Swap</span>
+                </div>
+                <div class="history">
+                    <div class="icon">
+                        <img src="public/images/icons/history.svg">
+                    </div>
+                    <span>History</span>
+                </div>
+            </div>
+
+            <!-- Cookies alert -->
+            <div class="cookies-alert">
+                <div class="text-area">
+                    <p>This website use cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookies Policy.  </p>
+                </div>
+                <div class="accept-button">
+                    <button>accept all</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Notifications -->
+    <div class="notifications">
+    </div>
+
+    
+    <!-- History tab -->
+    <div class="history-tab">
+        <div class="container">
+            <div class="close-btn">
+                <img src="public/images/icons/close_tab.svg">
+            </div>
+            <div class="saved-items">
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="public/js/main.js"></script>
+</body>
+</html>
