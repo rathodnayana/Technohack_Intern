@@ -1,1 +1,0 @@
-# Technohack_Intern
